@@ -1,0 +1,23 @@
+server:
+  host: "0.0.0.0"
+  port: 8080
+  mode: "release"  # debug, release, test
+  read_timeout: 15s
+  write_timeout: 15s
+  shutdown_timeout: 10s
+
+database:
+  driver: "sqlite"
+  host: "localhost"
+  port: 3306
+  username: ""
+  password: ""
+  dbname: "./data/app.db"
+  max_open_conns: 25
+  max_idle_conns: 5
+  conn_max_lifetime: 300
+
+log:
+  level: "info"  # debug, info, warn, error
+  format: "json"  # json, text
+  output_path: "stdout"  # stdout, or file path
